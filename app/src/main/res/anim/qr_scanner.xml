@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator" >
+
+    <!-- Use startOffset to give delay between animations -->
+
+    <translate
+        android:duration="800"
+        android:fillAfter="true"
+        android:fromYDelta="0%p"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:startOffset="800"
+        android:toYDelta="80%p" />
+</set>

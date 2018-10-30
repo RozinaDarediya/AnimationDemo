@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theta.animationdemo">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenLayout"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SharedElementTransitions.SharedElementTransitionsActivity" />
+        <activity android:name=".SharedElementTransitions.SharedElementTransitionsActivity2" />
+        <activity android:name=".RevealEffect.RevealEffectActivity" />
+        <activity android:name=".RecylerViewAnimation.RecyclerViewActivity" />
+        <activity android:name=".RecylerViewAnimation.AnimatorSampleActivity" />
+        <activity android:name=".RecylerViewAnimation.AdapterSampleActivity" />
+        <activity android:name=".ExpandableView.ExpandableViewActivity" />
+        <activity android:name=".RecyclerViewWithCardview.RecyclerviewCardviewActivity" />
+        <activity android:name=".CircleList.CircleListActivity" />
+        <activity android:name=".AndroidPageCurl.CurlActivity" />
+        <activity android:name=".ViewPagerAnimation.ViewPagerAnimationActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".TransitionAnimation.TransitionActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ExpandableView.CurrentPosition" />
+        <activity android:name=".fabButtonRotation.FabButtonAnimationActivity" />
+        <activity android:name=".LottiAnimation.LottieAnimationActivity" />
+        <activity android:name=".sparkleMotion.SparkleDemoActivity" />
+        <activity android:name=".parallaxAnimation.ParallaxAnimationActivity" />
+        <activity android:name=".ParallaxViewPagerDemo.ParallaxActivity" />
+        <activity android:name=".Dialoganimation.DialogAnimationActivity" />
+        <activity android:name=".AndroidDemoActivity" />
+        <activity android:name=".pullToRefresh.PullToRefreshctivity" />
+        <activity android:name=".statusbarImage.StatusbarImageActivity" />
+        <activity android:name=".CoordinatorLayout.CoordinatorLayoutActivity" />
+        <activity android:name=".statusbarImage.HideStatusbarActivity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".ReturnActivity" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".retrofit.ApiCallActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <receiver
+            android:name=".retrofit.service.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".retrofit.webservices.ApiAuthenticator"
+            android:enabled="true" />
+
+        <activity android:name=".uploadFileOnDrive.UploadFileActivity" />
+        <activity android:name=".uploadFileOnDrive.UploadFile" />
+        <activity android:name=".OpenMap.OpenGoogleMapActivity" />
+        <activity android:name=".deepLinking.DeepLinkingActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.example.com"
+                    android:pathPrefix="/gizmos"
+                    android:scheme="http"/>
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name="SimpleWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/simple_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>

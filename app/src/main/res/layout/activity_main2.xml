@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theta.animationdemo.Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeView"
+            android:background="@drawable/ripple"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnTransitionsAnimation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="@string/btnTransitionsAnimation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_cyan"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="TransitionsAnimation" />
+
+            <Button
+                android:id="@+id/btnRevealEffect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="@string/btnRevealEffect"
+                android:textAllCaps="false"
+                android:textColor="@color/light_purple"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="RevealEffect" />
+
+            <Button
+                android:id="@+id/btnExpandable1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="@string/btnExpandable"
+                android:textAllCaps="false"
+                android:textColor="@color/light_green"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="Expandable" />
+
+            <Button
+                android:id="@+id/btnRecyclerviewAnimation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:text="@string/btnRecyclerviewAnimation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_cyan"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="RecyclerviewAnimation" />
+
+            <Button
+                android:id="@+id/btnRecyclerviewCardview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="RecyclerviewCardview"
+                android:textAllCaps="false"
+                android:textColor="@color/light_purple"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="RecyclerviewCardview" />
+
+            <Button
+                android:id="@+id/btnCircleList1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="CircleList"
+                android:textAllCaps="false"
+                android:textColor="@color/light_green"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="CircleList" />
+
+            <Button
+                android:id="@+id/btnTransitionAnimation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Transition Animation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_purple"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="TransitionAnimation" />
+
+            <Button
+                android:id="@+id/btnViewPagerAnimation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="View Pager Animation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_cyan"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="ViewPagerAnimation" />
+
+            <Button
+                android:id="@+id/SparkleAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SparkleAnimation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_cyan"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="ViewPagerAnimation" />
+
+            <Button
+                android:id="@+id/btnParallaxAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Parallax Animation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_purple"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="TransitionAnimation" />
+
+
+            <Button
+                android:id="@+id/btnParallaxAnimationViewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Parallax Viewpager Animation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_purple"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="TransitionAnimation" />
+
+            <Button
+                android:id="@+id/btnDialogAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Dialog Animation"
+                android:textAllCaps="false"
+                android:textColor="@color/light_purple"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:transitionName="TransitionAnimation" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_cyan_opacity"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/txtStateListAnimator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/txtStateListAnimator"
+                    android:textColor="@color/green"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/fab_button"
+                    android:layout_width="@dimen/fab_size"
+                    android:layout_height="@dimen/fab_size"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ripple_round"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:stateListAnimator="@animator/fab_anim"
+                    android:transitionName="fab" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

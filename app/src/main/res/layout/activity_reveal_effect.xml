@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightPink"
+    tools:context="com.theta.animationdemo.RevealEffect.RevealEffectActivity">
+
+    <TextView
+        android:id="@+id/txtRevealEffextLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="@string/txtRevealEffect"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/txtRevealEffextDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/txtRevealEffextLable"
+        android:text="@string/txtRevealEffectDetail"
+        android:layout_margin="10dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="35dp"
+        android:src="@android:drawable/btn_star" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <!-- <TableLayout
+        android:id="@+id/table_main"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/boarder"
+        android:layout_centerHorizontal="true" >
+    </TableLayout>-->
+    <ImageView
+        android:id="@+id/label_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="W,2:2"
+        app:layout_constraintEnd_toStartOf="@+id/label_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addbutton" />
+
+    <ImageView
+        android:id="@+id/label_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="W,1:1"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_1"
+        app:layout_constraintEnd_toStartOf="@+id/label_3"
+        app:layout_constraintStart_toEndOf="@id/label_1"
+        app:srcCompat="@drawable/addbutton" />
+
+    <ImageView
+        android:id="@+id/label_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="W,1:1"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_1"
+        app:layout_constraintStart_toEndOf="@id/label_2"
+        app:srcCompat="@drawable/addbutton" />
+
+    <ImageView
+        android:id="@+id/label_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="W,1:1"
+        app:layout_constraintBaseline_toBaselineOf="@id/label_1"
+        app:layout_constraintStart_toEndOf="@id/label_3"
+        app:srcCompat="@drawable/addbutton" />
+
+</android.support.constraint.ConstraintLayout>
+

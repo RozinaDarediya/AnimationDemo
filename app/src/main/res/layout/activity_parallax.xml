@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteColor"
+    tools:context="com.theta.animationdemo.ParallaxViewPagerDemo.ParallaxActivity">
+
+    <FrameLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.theta.animationdemo.ParallaxViewPagerDemo.ParallaxViewPager
+            android:layout_marginTop="40dp"
+            android:id="@+id/parallaxViewPager"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_gray"
+            android:layout_height="250dp" />
+
+        <com.theta.animationdemo.ParallaxViewPagerDemo.ViewPagerCustomDuration
+            android:layout_width="match_parent"
+            android:id="@+id/viewPager"
+            android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/middleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottomLayout"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <com.theta.animationdemo.ParallaxViewPagerDemo.CircleIndicator
+                        android:id="@+id/tabIndicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:ci_animator="@animator/indicator_no_animator"
+                        app:ci_drawable="@drawable/onboarding_selected_tab"
+                        app:ci_drawable_unselected="@drawable/page_unselected"
+                        app:ci_height="15dp"
+                        app:ci_margin="10dp"
+                        app:ci_width="15dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="Intro1Title"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/animatedView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="6.5"
+                    android:gravity="center"
+                    android:lineSpacingExtra="7dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/strIntro1Text"
+                    android:textColor="@color/primary_500"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="8dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/btnPrevious"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:paddingLeft="20dp"
+                    android:text="Previoud"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/button_background_selected"
+                    android:textSize="20dp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="14dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="Next"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/button_background_selected"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+</LinearLayout>

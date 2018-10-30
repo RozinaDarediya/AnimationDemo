@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorLightPink">#e2d7db</color>
+    <color name="rippleColor">#9e838d</color>
+    <color name="backgroundColor">#e2d7db</color>
+    <color name="whiteColor">#ffffff</color>
+
+    <color name="light_green">#3eb74e</color>
+    <color name="green">#214826</color>
+    <color name="light_purple">#8c61b3</color>
+    <color name="btnNext">#8c61b3</color>
+    <color name="light_orange">#ffb500</color>
+    <color name="light_cyan">#00BCD4</color>
+    <color name="light_cyan_opacity">#3900bcd4</color>
+    <color name="black">#000000</color>
+
+    <color name="button_background_default">#F3F3F3</color>
+    <color name="button_background_selected">#DDDDDD</color>
+
+    <color name="primary_500">#3F51B5</color>
+    <color name="black_trans_80">#33000000</color>
+</resources>
