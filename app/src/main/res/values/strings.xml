@@ -56,23 +56,23 @@
     
     <!-- Onboarding Fragment1   -->
     <!--<string name="strIntro1Title">Welcome!</string>-->
-    <string name="strIntro1Title">Welcome to Nirvana Motors</string>
-    <string name="strIntro1Text">Do you know that managing your Nirvana\n bike is as easy as a single tap.\n Swipe left to know more. </string>
+    <string name="strIntro1Title">Meet Android Studio</string>
+    <string name="strIntro1Text">Android Studio is the official Integrated Development Environment (IDE) for Android app development, based on IntelliJ IDEA  </string>
     <!--<string name="strIntro1Text">Did you know that managing your electric\n moterbike is as easy as a nimgle tap?\n Swipe left to konw more. </string>-->
     
     <!-- Onboarding Fragment1   -->
-    <string name="strIntro2Title">Replace battery at your convenience</string>
-    <string name="strIntro2Text">Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way.</string>
+    <string name="strIntro2Title">Project structure</string>
+    <string name="strIntro2Text">Each project in Android Studio contains one or more modules with source code files and resource files..</string>
     
     <!-- Onboarding Fragment1   -->
-    <string name="strIntro3Title">Track your Energy usage &amp; Savings</string>
-    <string name="strIntro3Text">With our next generation tracker, you get\n statistics of CO<small> 2 </small> abated, green points earned\n and other information about your rides. </string>
+    <string name="strIntro3Title">Tool windows</string>
+    <string name="strIntro3Text">Instead of using preset perspectives, Android Studio follows your context and automatically brings up relevant tool windows as you work.</string>
     
     <!-- Onboarding Fragment1   -->
-    <string name="strIntro4Title">Shop Accessories of your Style</string>
-    <string name="strIntro4Text">Explore different accessories to discover \n your style. Your perfect ride \n is just a click away.</string>
+    <string name="strIntro4Title">Code completion</string>
+    <string name="strIntro4Text">Android Studio has three types of code completion, which you can access using keyboard shortcuts.</string>
     
-    <string name="strText">Do you know that managing your Nirvana\n bike is as easy as a single tap.\n Swipe left to know more.Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way.With our next generation tracker, you get\n statistics of CO<small> 2 </small> abated, green points earned\n and other information about your rides.Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way.Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way. </string>
+    <string name="strText">A project in Android Studio\n contains everything that defines your\n workspace for an app,\n from source code and assets,\n to test code and build configurations.\n When you start a new project,\n Android Studio creates the necessary\n structure for all your\n files and makes them visible\n in the Project window on the left\n side of the IDE (click View > Tool Windows > Project).</string>
     
     <!-- Onboarding Activity   -->
     <string name="strNext">Next</string>
@@ -131,5 +131,5 @@
     <string name="hint_word">Word...</string>
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
-    
+
 </resources>
