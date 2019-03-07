@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.theta.animationdemo">
-
+    
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,16 +18,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".room_database.RoomBasicActivity"
+            android:label="@string/title_activity_room_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".room_database.RoomActivity" />
+        <activity
             android:name=".MainActivity"
             android:configChanges="screenLayout"
             android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SharedElementTransitions.SharedElementTransitionsActivity" />
+        <activity android:name=".SharedElementTransitions.SharedElementTransitionsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                
+                <category android:name="android.intent.category.DEFAULT" />
+                
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SharedElementTransitions.SharedElementTransitionsActivity2" />
         <activity android:name=".RevealEffect.RevealEffectActivity" />
         <activity android:name=".RecylerViewAnimation.RecyclerViewActivity" />
@@ -58,7 +71,7 @@
         <activity android:name=".ReturnActivity" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".retrofit.ApiCallActivity">
-
+            
             <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,7 +80,7 @@
             </intent-filter>
             -->
         </activity>
-
+        
         <receiver
             android:name=".retrofit.service.NetworkChangeReceiver"
             android:label="NetworkChangeReceiver">
@@ -76,41 +89,53 @@
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
             </intent-filter>
         </receiver>
-
+        
         <service
             android:name=".retrofit.webservices.ApiAuthenticator"
             android:enabled="true" />
-
+        
         <activity android:name=".uploadFileOnDrive.UploadFileActivity" />
         <activity android:name=".uploadFileOnDrive.UploadFile" />
         <activity android:name=".OpenMap.OpenGoogleMapActivity" />
         <activity android:name=".deepLinking.DeepLinkingActivity">
-            <!--<intent-filter>
+            
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
+                
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-
+                
                 <data
                     android:host="www.example.com"
                     android:pathPrefix="/gizmos"
-                    android:scheme="http"/>
+                    android:scheme="http" />
             </intent-filter>
-
         </activity>
-
-        <receiver android:name="SimpleWidgetProvider" >
+        
+        <receiver android:name=".SimpleWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
-            <meta-data android:name="android.appwidget.provider"
+            
+            <meta-data
+                android:name="android.appwidget.provider"
                 android:resource="@xml/simple_widget_info" />
-        </receiver>
+        </receiver> <!-- For multiple image -->
+        <!--
+          <intent-filter>
+              <action android:name="android.intent.action.SEND_MULTIPLE" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <data android:mimeType="image/*" />
+          </intent-filter>
+        -->
+        <activity android:name=".TouchAnimationActivity" />
     </application>
 
 </manifest>

@@ -22,4 +22,6 @@
 
     <color name="primary_500">#3F51B5</color>
     <color name="black_trans_80">#33000000</color>
+    
+    <color name="buttonLabel">#d3d3d3</color>
 </resources>

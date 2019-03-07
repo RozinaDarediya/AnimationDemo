@@ -11,6 +11,7 @@ import com.theta.animationdemo.OpenMap.OpenGoogleMapActivity;
 import com.theta.animationdemo.deepLinking.DeepLinkingActivity;
 import com.theta.animationdemo.pullToRefresh.PullToRefreshctivity;
 import com.theta.animationdemo.retrofit.ApiCallActivity;
+import com.theta.animationdemo.room_database.RoomBasicActivity;
 import com.theta.animationdemo.statusbarImage.HideStatusbarActivity;
 import com.theta.animationdemo.statusbarImage.StatusbarImageActivity;
 import com.theta.animationdemo.uploadFileOnDrive.UploadFileActivity;
@@ -26,6 +27,7 @@ public class AndroidDemoActivity extends AppCompatActivity implements View.OnCli
     private Button btnUploadFile;
     private Button btnOpenMap;
     private Button btnDeepLinking;
+    private Button btnRoomDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,8 @@ public class AndroidDemoActivity extends AppCompatActivity implements View.OnCli
         btnOpenMap.setOnClickListener(this);
         btnDeepLinking = findViewById(R.id.btnDeepLinking);
         btnDeepLinking.setOnClickListener(this);
+        btnRoomDb = findViewById(R.id.btnRoomDb);
+        btnRoomDb.setOnClickListener(this);
 
     }
 
@@ -88,6 +92,10 @@ public class AndroidDemoActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btnDeepLinking:
                 intent = new Intent(this, DeepLinkingActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnRoomDb:
+                intent = new Intent(this, RoomBasicActivity.class);
                 startActivity(intent);
                 break;
 

@@ -10,10 +10,9 @@
         android:id="@+id/reveal_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:elevation="5dp"
         android:background="@color/light_cyan_opacity"
+        android:elevation="5dp"
         android:visibility="visible" />
-
 
 
     <LinearLayout
@@ -22,23 +21,23 @@
         android:orientation="vertical">
 
         <TextView
-            android:gravity="center"
-            android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="@string/txtClickInfo"/>
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/txtClickInfo"
+            android:textSize="20dp" />
+
         <Button
             android:id="@+id/btnClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:backgroundTint="@color/light_purple"
+            android:stateListAnimator="@drawable/translation_selector"
             android:text="@string/btnClick"
             android:textAllCaps="false"
-            android:textSize="20dp"
-            android:stateListAnimator="@drawable/translation_selector"
-            />
+            android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/ivImage"
@@ -46,6 +45,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="200dp"
+            android:clickable="true"
             android:src="@mipmap/ic_launcher_round"
             android:transitionName="image" />
     </LinearLayout>

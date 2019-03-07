@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">AnimationDemo</string>
-
+    
     <string name="client_id">1006258203969-em5bpnksm9ehlstijs4j6edautr9b4q7.apps.googleusercontent.com</string>
-
+    
     <string name="txtLable">Click on FAB Button</string>
     <string name="btnTransitionsAnimation">Shared Element Transitions</string>
     <string name="btnClick">Click To See Shared Element Transitions</string>
@@ -13,7 +13,7 @@
         For eg — an image in a recycler view item which when clicked(tapped) show the item detail with the same image but in larger size.
         Dont forget t give <i><b><u>android:transitionName="transitionImg"</u></b></i> value in both the imageview XML file.
     </string>
-
+    
     <string name="btnRevealEffect">Reveal Effect</string>
     <string name="txtRevealEffect">Click on Fab button to see Reveal Effect</string>
     <string name="txtRevealEffectDetail">Example of Reveal animations on Android 5.0
@@ -21,27 +21,27 @@
         ViewAnimationUtils.createCircularReveal (View view, int centerX, int centerY,
         float startRadius, float endRadius) method returns an Animator which can animate a clipping circle,
         to animate a clipping circle to reveal or hide a view.</string>
-
+    
     <string name="txtStateListAnimator">Click on Fab Button To see StateListAnimator</string>
-
+    
     <string name="btnRecyclerviewAnimation">Recyclerview Animation</string>
-
+    
     <string name="txtExpandableLAble">Click me to see the expandable view</string>
     <string name="btnExpandable">Expandable View</string>
-
+    
     <string name="email">EMAIL</string>
     <string name="calender">CALENDAR</string>
     <string name="shopping">SHOPPING</string>
     <string name="social_network">SOCIAL NETWORK</string>
-
-
+    
+    
     <string name="email_hint">A system for sending and receiving messages electronically over a computer network.</string>
     <string name="calender_hint">Note all your special occasions in calendar and keep them in your finger tips</string>
     <string name="shopping_hint">Shop and get offers, promo codes and discounts on your future purchase.</string>
     <string name="social_network_hint">Stay connected with your friends, colleagues and family globally</string>
     <string name="skip">SKIP</string>
-
-
+    
+    
     <string name="txtTransition">Transition Animation</string>
     <string name="btn1">Button1</string>
     <string name="btn2">Button2</string>
@@ -49,37 +49,37 @@
     <string name="btn4">Button4</string>
     <string name="btn5">Button5</string>
     <string name="btn6">Button6</string>
-
+    
     <string name="txtLableCurrent">Detais</string>
     <string name="txtLableCurrentData">Data</string>
     <string name="ivTransition">transition</string>
-
+    
     <!-- Onboarding Fragment1   -->
     <!--<string name="strIntro1Title">Welcome!</string>-->
     <string name="strIntro1Title">Welcome to Nirvana Motors</string>
     <string name="strIntro1Text">Do you know that managing your Nirvana\n bike is as easy as a single tap.\n Swipe left to know more. </string>
     <!--<string name="strIntro1Text">Did you know that managing your electric\n moterbike is as easy as a nimgle tap?\n Swipe left to konw more. </string>-->
-
+    
     <!-- Onboarding Fragment1   -->
     <string name="strIntro2Title">Replace battery at your convenience</string>
     <string name="strIntro2Text">Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way.</string>
-
+    
     <!-- Onboarding Fragment1   -->
     <string name="strIntro3Title">Track your Energy usage &amp; Savings</string>
     <string name="strIntro3Text">With our next generation tracker, you get\n statistics of CO<small> 2 </small> abated, green points earned\n and other information about your rides. </string>
-
+    
     <!-- Onboarding Fragment1   -->
     <string name="strIntro4Title">Shop Accessories of your Style</string>
     <string name="strIntro4Text">Explore different accessories to discover \n your style. Your perfect ride \n is just a click away.</string>
-
+    
     <string name="strText">Do you know that managing your Nirvana\n bike is as easy as a single tap.\n Swipe left to know more.Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way.With our next generation tracker, you get\n statistics of CO<small> 2 </small> abated, green points earned\n and other information about your rides.Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way.Power up your vehicle before its too late. Find\n out nearby battery stations and swipe your\n batteries in a delightfully easy way. </string>
-
+    
     <!-- Onboarding Activity   -->
     <string name="strNext">Next</string>
     <string name="btnNext">Next</string>
     <string name="strPrevioud">Previous</string>
     <string name="strGetStarted">Get Started</string>
-
+    
     <string-array name="array_technology">
         <item>Android</item>
         <item>Java</item>
@@ -94,7 +94,7 @@
         <item>.Net</item>
         <item>Perl</item>
     </string-array>
-
+    
     <string-array name="days">
         <item>Sunday</item>
         <item>Monday</item>
@@ -104,7 +104,7 @@
         <item>Friday</item>
         <item>Saturday</item>
     </string-array>
-
+    
     <string-array name="months">
         <item>January</item>
         <item>February</item>
@@ -119,12 +119,17 @@
         <item>November</item>
         <item>December</item>
     </string-array>
-
+    
     <string name="txt_no_network">Sorry, your device couldn\'t connect (no Internet connection).</string>
     <string name="txt_ok">OK</string>
     <string name="register_terms">Test&#160;<a href="#">link</a></string>
     <string name="register_terms1">Test <![CDATA[<a href="#">link</a>]]></string>
     <string name="register_terms2">By clicking this button, you agree to our&#160;<a href="https://www.google.com/">Terms &amp; Conditions</a> and <a href="https://www.google.com/">Privacy Policy</a>.</string>
     <string name="register_terms3">By clicking this button, you agree to our <![CDATA[<a href="https://www.google.com/">Terms &amp; Conditions</a>]]> and <![CDATA[<a href="https://www.google.com/">Privacy Policy</a>]]>. \n Click on ANDROID TASK to see more task</string>
-
+    <string name="title_activity_room_basic">RoomBasicActivity</string>
+    
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    
 </resources>
