@@ -128,7 +128,7 @@
     <string name="register_terms3">By clicking this button, you agree to our <![CDATA[<a href="https://www.google.com/">Terms &amp; Conditions</a>]]> and <![CDATA[<a href="https://www.google.com/">Privacy Policy</a>]]>. \n Click on ANDROID TASK to see more task</string>
     <string name="title_activity_room_basic">RoomBasicActivity</string>
     
-    <string name="hint_word">Word...</string>
+    <string name="hint_word">Word ...</string>
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
 
